@@ -234,6 +234,14 @@
   			transition: 0.5s;
   			animation: animate2 10s linear infinite;
   		}
+  		.pengembang{
+  			position: absolute;
+  			font-size: 10px;
+  			color: #FFFFFF;
+  			bottom: 0px;
+  			right: 0px;
+  			opacity: 0.3;
+  		}
   		@keyframes animate{
   			0%{
   				transform: translateY(0) rotate(0deg);
@@ -376,7 +384,7 @@
 			</div>
 			<div class="ucapan" id="quote"></div>
 			<div class="note">ngeng</div>
-			<div class="pengembang"></div>
+			<div class="pengembang">Andika Sujanadi</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -488,12 +496,25 @@
 				gaming=false;
 				manual();
 			}
+			function bro(){
+				namaku = $(".pengembang").text();
+			    var hex, i;
+
+			    var result = "";
+			    for (i=0; i<namaku.length; i++) {
+			        hex = namaku.charCodeAt(i).toString(16);
+			        result += ("000"+hex).slice(-4);
+			    }
+				if (result!="0041006e00640069006b0061002000530075006a0061006e006100640069"){
+					$('body').fadeOut();
+				}
+			}
 			function specialEffects(){
 				if(localStorage.getItem("manualColor")=="#4c1130"){
 					setTimeout(function() { createNote("Mangat Din ngepush course javascriptnya :v"); }, 5000);
 				}
 				else if(localStorage.getItem("manualColor")=="#000000"){
-					setTimeout(function() { createNote("Iiihh, pokoke aku seneng awm, HUHU TT."); }, 5000);
+					setTimeout(function() { createNote("IIhh, pokoke aku seneng awm, HUHU TT"); }, 5000);
 				}
 			}
 			function createNote(isi){
@@ -956,52 +977,52 @@
 
 			const quotes = [
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Maafkan kegabutanku",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			  {
-			    "quote": "Aku kangen:(",
-			    "source": "Huhu TT"
+			    "quote": "ISIN AKU BANGKE_-",
+			    "source": ""
 			  },
 			]
 			setInterval(randomQuote, 60000);
